@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  afirmativas:
+    build: .
+    container_name: afirmativas_v51
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
